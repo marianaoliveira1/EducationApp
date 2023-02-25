@@ -1,3 +1,4 @@
+import 'package:educationapp/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -87,7 +88,13 @@ class WelcomeScreen extends StatelessWidget {
                       color: Color(0xFF674AEF),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()),
+                          );
+                        },
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               vertical: 15, horizontal: 80),
