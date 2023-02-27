@@ -50,6 +50,26 @@ class HomeScreen extends StatelessWidget {
                         wordSpacing: 2,
                         color: Colors.white),
                   ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 5, bottom: 20),
+                  width: MediaQuery.of(context).size.width,
+                  height: 55,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Pesquise aqui",
+                        hintStyle:
+                            TextStyle(color: Colors.black.withOpacity(.5)),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          size: 25,
+                        )),
+                  ),
                 )
               ],
             ),
