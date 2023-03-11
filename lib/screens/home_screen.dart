@@ -212,7 +212,24 @@ class HomeScreen extends StatelessWidget {
                             ),
                             SizedBox(
                               height: 10,
-                            )
+                            ),
+                            Text(
+                              imgList[index],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black.withOpacity(.6)),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "55 videos",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black.withOpacity(.5)),
+                            ),
                           ],
                         ),
                       ),
